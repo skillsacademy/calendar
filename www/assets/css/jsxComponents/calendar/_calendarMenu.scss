@@ -1,6 +1,8 @@
 @import "../../globalPartials/vars";
 
 .calendarMenu{
+	position:relative;
+	z-index:10; /* above .calendarMonth */
 	padding:$m20;
 
 	.calendarSettings,

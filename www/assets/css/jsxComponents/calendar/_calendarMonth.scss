@@ -1,11 +1,24 @@
 @import "../../globalPartials/vars";
 
-.calendarTableWeekView{
+.calendarMonth{
+
+/*
+	table:first-child{	
+		margin-top:-40px;
+	}*/
 	table{
+		margin:$m20 0 0 0;
 		border-collapse:collapse;
 		width:100%;
 		position:relative;
 		overflow:hidden;
+
+		caption{
+			/*margin:0 0 $m35 50px;*/
+			margin: 0 0 $m20 $m20;
+			text-align:left;
+			font-weight:bold;
+		}
 
 		&:after{ /* top relative to th height - gradient */
 			content: " ";

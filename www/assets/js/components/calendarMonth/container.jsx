@@ -1,4 +1,4 @@
-import 'css/jsxComponents/calendar/_calendarAssignments.scss';
+import 'css/jsxComponents/calendar/_calendarMonth.scss';
 
 
 import React, { Component, PropTypes } from 'react'

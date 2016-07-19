@@ -3,7 +3,7 @@ import React, {Component, PropTypes} from 'react';
 export default class ComponentXPresentation extends Component {
   render() {
     return (
-      <section className="calendarAssignments">
+      <section className="calendarAgenda">
       	<h2 className="title">Assignments</h2>
 
       	<div className="rowBlock">

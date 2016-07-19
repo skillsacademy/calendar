@@ -3,9 +3,9 @@ import React, {Component, PropTypes} from 'react';
 export default class ComponentXPresentation extends Component {
   render() {
     return (
-      <section className="calendarTableWeekView">
+      <section className="calendarMonth">
       	<table>
-      		<caption className="sr-only">Calendar of Schemes</caption>
+      		<caption>January</caption>
       		<thead>
       			<tr>
       				<th>M</th>

@@ -8,9 +8,6 @@ export default class ComponentXPresentation extends Component {
       	<div className="row">
 	      	<div className="col-xs-4">
 		      	<button className="calendarSettings"><span className="sr-only">Settings</span></button>
-		      	<h2 className="timeLabelMonth">
-		      		January
-		      	</h2>
 	      	</div>
 	      	<div className="col-xs-4 pull-right">
 		      	<ul className="buttons">

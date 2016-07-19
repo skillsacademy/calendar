@@ -1,4 +1,4 @@
-import 'css/jsxComponents/calendar/_calendarTableWeekView.scss';
+import 'css/jsxComponents/calendar/_calendarAgenda.scss';
 
 
 import React, { Component, PropTypes } from 'react'
