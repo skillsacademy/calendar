@@ -2,32 +2,46 @@
 
 .calendarMultiMonths{
 	
-	width:100%;
+	table{
+		border-spacing:0;
+		border:none;
+	}
 	.calendarMonth{
 		width:50%;
 		float:left;
 
-		table{
-			margin:0;
-			&:before{ 
-				content: " ";
-				position:absolute;
-				z-index:4;
-				top:0;
-				left:-10px;
-				width:120%;
-				box-shadow:$boxShadowInsetTop;
-				cursor-pointer:none;
-				height:10px;
-			}	
-
+		&:nth-child(odd) th:last-child,
+		&:nth-child(odd) td:last-child{	
+			padding-right:100px;
 		}
-		caption{
-			background:$greyE;
+	}
 
-		}
-		thead{
-			display:none;
+	.headerOfDays{
+
+	}
+	.monthList{
+		.calendarMonth{
+			table{
+				margin:0;
+				&:before{ 
+					content: " ";
+					position:absolute;
+					z-index:4;
+					top:0;
+					left:-10px;
+					width:120%;
+					box-shadow:$boxShadowInsetTop;
+					cursor-pointer:none;
+					height:10px;
+				}	
+
+			}
+			caption{
+				background:$greyE;
+			}
+			thead{
+				display:none;
+			}
 		}
 	}
 }
