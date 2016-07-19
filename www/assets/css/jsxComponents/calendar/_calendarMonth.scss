@@ -56,8 +56,18 @@
 		padding-right:$m35;
 	}	
 	
-	tbody .topicUnits td{
+	tbody .splitWeek td{
 		height:100px;
+	}
+	.dates td{
+		vertical-align:bottom;
+		padding-bottom:$m10;
+	}
+	.dates .spot{
+		margin:0 0 $m5 $m5;
+	}
+	.date{
+		display:block;
 	}
 
 
