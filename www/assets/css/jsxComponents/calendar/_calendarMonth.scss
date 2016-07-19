@@ -13,24 +13,29 @@
 		position:relative;
 		overflow:hidden;
 
-		caption{
-			/*margin:0 0 $m35 50px;*/
-			margin: 0 0 $m20 $m20;
-			text-align:left;
-			font-weight:bold;
-		}
-
-		&:after{ /* top relative to th height - gradient */
+/*     top relative to th height - gradient *
+		&:after{ 
 			content: " ";
 			position:absolute;
 			bottom:0;
 			left:-10px;
 			width:120%;
 			height:110%;
-			box-shadow:$boxShadowBottomInset;
+			box-shadow:$boxShadowInsetBottom;
 			cursor-pointer:none;
 		}
+		*/
 
+		caption{
+			/*margin:0 0 $m35 50px;*/
+			padding: $m20;
+			text-align:left;
+			font-weight:bold;
+			color:$grey6;
+			position:relative;
+
+		
+		}
 	}
 	th,
 	td{

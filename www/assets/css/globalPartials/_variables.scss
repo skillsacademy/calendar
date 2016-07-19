@@ -2,8 +2,8 @@ $dirFonts:"../../App/styles/ui/fonts/MyFonts/webfonts";
 $dirImages:"../../../img/";
 
 $boxShadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-$boxShadowInsetTop: rgba(0, 0, 0, 0.3) 0px 1px 6px inset;
-$boxShadowBottomInset: rgba(0, 0, 0, 0.3) 0px -1px 6px inset;
+$boxShadowInsetTop: inset 0px 5px 16px -9px rgba(148,148,148,1);
+$boxShadowInsetBottom: rgba(0, 0, 0, 0.3) 0px -1px 6px inset;
 
 /* margins and paddings - the reason for making this variables is to allow quick tweaks to the global site, and filter the amount of margins that exist. Ideally we shouldn't have too many varying margins and paddings, and stick to a subject/library and re-use them. */
 $m4:4px;
@@ -18,6 +18,7 @@ $m35:35px;
 /* colors */
 $greyFF:#fff;
 $greyF:#f6f6f6;
+$greyE:#eee;
 $greyC:#c8c8c8;
 $grey6:#666;
 $grey3:#333;

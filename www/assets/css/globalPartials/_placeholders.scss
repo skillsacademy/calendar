@@ -52,7 +52,11 @@
 	-moz-box-shadow: $boxShadowInsetTop;
 	-webkit-box-shadow: $boxShadowInsetTop;
 }
-
+%boxShadowInsetBottom{
+	box-shadow:$boxShadowInsetBottom;
+	-moz-box-shadow: $boxShadowInsetBottom;
+	-webkit-box-shadow: $boxShadowInsetBottom;
+}
 
 %typeSmall{
 	font-size:8px;
