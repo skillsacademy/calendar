@@ -59,6 +59,11 @@
 	tbody .splitWeek td{
 		height:100px;
 	}
+	.wk{
+		display: block;
+		font-weight:bold;
+		margin:0 0 $m5 0;
+	}
 	.dates td{
 		vertical-align:bottom;
 		padding-bottom:$m10;

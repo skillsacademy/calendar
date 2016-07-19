@@ -20,14 +20,11 @@ export default class ComponentXPresentation extends Component {
       		<tbody>
       			<tr className="splitWeek">
       				<td data-unit-type="unitG" colSpan="3"> 
-                                    <span className="wk">Wk 1 first half:</span>
+                                    <span className="wk">Wk 1</span>
                                     <span className="unitName">Algebra, quadratics, rearanging formulae, and identities</span>
                               </td>
 
-                              <td data-unit-type="unitY" colSpan="4"> 
-                                    <span className="wk">Wk 1 second half:</span>
-                                    <span className="unitName">Algebra, quadratics, rearanging formulae, and identities</span>
-                              </td>                              
+                              <td  colSpan="4"> &nbsp;</td>                              
       			</tr>   
                         <tr className="dates">
                               <td data-unit-type="unitG">
@@ -37,12 +34,12 @@ export default class ComponentXPresentation extends Component {
                               <td data-unit-type="unitG">9</td>
                               <td data-unit-type="unitG">10</td>
                               
-                              <td data-unit-type="unitY">11</td>
-                              <td data-unit-type="unitY">12</td>
-                              <td data-unit-type="unitY">13</td>
-                              <td data-unit-type="unitY">14</td>
+                              <td>11</td>
+                              <td>12</td>
+                              <td>13</td>
+                              <td>14</td>
                         </tr>
-
+{/* example iteration
                         <tr className="splitWeek">
                               <td> 
                                     &nbsp;                                 
@@ -72,6 +69,8 @@ export default class ComponentXPresentation extends Component {
                               <td data-unit-type="unitB">20</td>
                               <td data-unit-type="unitB">21</td>
                         </tr>
+
+                  */}
       		</tbody>
       	</table>
 
