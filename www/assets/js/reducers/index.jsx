@@ -3,22 +3,20 @@ import { routerReducer } from 'react-router-redux'
 
 import ToDo  from './todo.jsx';
 import ToDo2 from './todo2.jsx';
+import Agenda from './agenda.jsx';
 import SomethingElse from './somethingElse.jsx';
 
-const ToDoGroup = combineReducers({    
+const ToDoGroup = {    
    todo:ToDo,
-   todo2:ToDo2
-});
+   todo2:ToDo2,
+   agenda:Agenda
+};
 
 const combinedCustomReducers =  combineReducers({    
-   ToDoGroup,
-  	SomethingElse
+	...ToDoGroup,
+  	SomethingElse,
+	routing: routerReducer //not forgetting to add routerRedcuer to the mix too..
 });
 
-export default combineReducers({    
-    routing: routerReducer, //not forgetting to add routerRedcuer to the mix too..
-    combinedCustomReducers
-});
-
-
+export default combinedCustomReducers
 

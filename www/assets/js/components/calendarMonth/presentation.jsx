@@ -39,38 +39,6 @@ export default class ComponentXPresentation extends Component {
                               <td>13</td>
                               <td>14</td>
                         </tr>
-{/* example iteration
-                        <tr className="splitWeek">
-                              <td> 
-                                    &nbsp;                                 
-                              </td>
-                              <td> 
-                                   &nbsp;                                 
-                              </td>
-                              <td> 
-                                   &nbsp;                                 
-                              </td>                              
-                              <td data-unit-type="unitB" colSpan="4"> 
-                                    <span className="wk">Wk 1 second half:</span>
-                                    <span className="unitName">Algebra, quadratics, rearanging formulae, and identities</span>
-                              </td>                              
-                        </tr> 
-
-                        <tr className="dates">
-                              <td>15</td>
-                              <td>16</td>
-                              <td>17</td>
-                              
-                              <td data-unit-type="unitB">
-                                    <i className="spot"></i> 
-                                    <span className="date">18</span> 
-                              </td>
-                              <td data-unit-type="unitB">19</td>
-                              <td data-unit-type="unitB">20</td>
-                              <td data-unit-type="unitB">21</td>
-                        </tr>
-
-                  */}
       		</tbody>
       	</table>
 
