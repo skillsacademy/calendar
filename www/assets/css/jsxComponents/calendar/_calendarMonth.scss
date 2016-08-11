@@ -2,10 +2,6 @@
 
 .calendarMonth{
 
-/*
-	table:first-child{	
-		margin-top:-40px;
-	}*/
 	table{
 		margin:$m20 0 0 0;
 		border-collapse:collapse;
@@ -13,28 +9,13 @@
 		position:relative;
 		overflow:hidden;
 
-/*     top relative to th height - gradient *
-		&:after{ 
-			content: " ";
-			position:absolute;
-			bottom:0;
-			left:-10px;
-			width:120%;
-			height:110%;
-			box-shadow:$boxShadowInsetBottom;
-			cursor-pointer:none;
-		}
-		*/
-
 		caption{
 			/*margin:0 0 $m35 50px;*/
 			padding: $m20;
 			text-align:left;
 			font-weight:bold;
 			color:$grey6;
-			position:relative;
-
-		
+			position:relative;		
 		}
 	}
 	th,
@@ -61,24 +42,73 @@
 		padding-right:$m35;
 	}	
 	
-	tbody .splitWeek td{
-		height:100px;
-	}
-	.wk{
-		display: block;
-		font-weight:bold;
-		margin:0 0 $m5 0;
-	}
-	.dates td{
-		vertical-align:bottom;
-		padding-bottom:$m10;
-	}
-	.dates .spot{
-		margin:0 0 $m5 $m5;
-	}
-	.date{
-		display:block;
+
+	td{
+		height:120px;
 	}
 
+	tr.dates{
+		margin-top:-120px;  /* td height  */
+		position:absolute;
+		@extend %flex;
+		width:100%;
+
+		td{
+			display:inline-block;
+		}
+		.spots{
+			position:absolute;
+			bottom:35px;
+		}
+		.spot{
+    		margin-right:$m5;
+		}
+		.date{
+			display:block;
+			position:absolute;
+			bottom:10px;
+		}		
+	}
+
+
+	tr.splitWeek{		
+
+		td{
+			&[colSpan="2"]{width:28.57142857142857%;}
+			&[colSpan="3"]{width:42.85714285714286%;}
+			&[colSpan="4"]{width:57.14285714285714%;}
+			&[colSpan="5"]{width:71.42857142857143%;}
+			&[colSpan="6"]{width:85.71428571428571%;}
+
+			vertical-align:top;
+			padding-top:20px;
+
+			.wk{
+				display: block;
+				font-weight:bold;
+				margin:0 0 $m5 0;
+			}	
+
+
+			.stretch{		
+				@extend %flexVerticalCenter;	
+				.wk{
+					display:block;
+					font-weight:bold;
+				}		
+			}
+
+			td:first-child .stretch .middle{
+				padding-left:$m20;
+			}
+			td:last-child .stretch .middle{
+				padding-right:$m35;
+			}
+			td .stretch .middle{	
+				padding:$m4 $m10;			
+			}					
+		}
+
+	}
 
 }

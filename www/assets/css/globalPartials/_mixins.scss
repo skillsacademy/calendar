@@ -45,3 +45,12 @@
 	-ms-flex-pack: justify;	
 	justify-content: space-between;
 }
+
+
+@mixin flexVerticalCenter{
+	@include flex;
+	@include flexVertical;
+	
+	justify-content: center;
+	-ms-flex-pack: center;
+}
