@@ -16,8 +16,5 @@ http://localhost:3000/index.html
 
 Summary:
 This example shows the following:
-- How to combine reducers into a tidy store
-- Using middlewhere thunk, to share 'dispatch' method to all containers.
-- The basic structure for building action files and reducers in chosen diretories to keep code structure tidy.
-- A simple action that updates the state - Add Agenda.
+- How each day overlays the half weeks so that you can collect information about each day on click
 
